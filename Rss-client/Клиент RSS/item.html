@@ -1,0 +1,366 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8" />
+    <title>RSS-Reader</title>
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/host.js"></script>
+    <style>
+.simple-little-table {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666;
+    font-size: 12px;
+    text-shadow: 1px 1px 0px #fff;
+    background: #eaebec;
+    margin: 20px;
+    border: #ccc 1px solid;
+    border-collapse: separate;
+
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+
+    -moz-box-shadow: 0 1px 2px #d1d1d1;
+    -webkit-box-shadow: 0 1px 2px #d1d1d1;
+    box-shadow: 0 1px 2px #d1d1d1;
+}
+
+.simple-little-table th {
+    font-weight: bold;
+    padding: 21px 25px 22px 25px;
+    border-top: 1px solid #fafafa;
+    border-bottom: 1px solid #e0e0e0;
+
+    background: #ededed;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+    background: -moz-linear-gradient(top, #ededed, #ebebeb);
+}
+
+.simple-little-table th:first-child {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.simple-little-table tr:first-child th:first-child {
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.simple-little-table tr:first-child th:last-child {
+    -moz-border-radius-topright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.simple-little-table tr {
+    text-align: center;
+    padding-left: 20px;
+}
+
+.simple-little-table tr td:first-child {
+    text-align: left;
+    padding-left: 20px;
+    border-left: 0;
+}
+
+.simple-little-table tr td {
+    padding: 18px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+
+    background: #fafafa;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+    background: -moz-linear-gradient(top, #fbfbfb, #fafafa);
+}
+
+.simple-little-table tr:nth-child(even) td {
+    background: #f6f6f6;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+    background: -moz-linear-gradient(top, #f8f8f8, #f6f6f6);
+}
+
+.simple-little-table tr:last-child td {
+    border-bottom: 0;
+}
+
+.simple-little-table tr:last-child td:first-child {
+    -moz-border-radius-bottomleft: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.simple-little-table tr:last-child td:last-child {
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.simple-little-table tr:hover td {
+    background: #f2f2f2;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+    background: -moz-linear-gradient(top, #f2f2f2, #f0f0f0);
+}
+
+.simple-little-table a:link {
+    color: #666;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.simple-little-table a:visited {
+    color: #999999;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.simple-little-table a:active,
+.simple-little-table a:hover {
+    color: #bd5a35;
+    text-decoration: underline;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>RSS-Reader</h1>
+
+        </header>
+
+        <h2 id="tableBlockH" hidden>Выберите интересующую вас ленту</h2>
+        <div align="center" id="tableBlock"></div>
+        <h2 id="tableBlockDopH" hidden>Выберите интересующую вас новость</h2>
+        <div align="center" id="tableBlockDop"></div>
+
+
+    </div>
+
+    <script type="text/javascript">
+window.tokenKey = "tokenInfo";
+//метод для подписки
+
+
+
+
+$(document).ready(function() {
+
+
+    $.ajax({
+        type: 'GET',
+        url: window.host + 'api/authorize/',
+        dataType: 'json',
+        beforeSend: function(xhr) {
+            //debugger;
+            var token = sessionStorage.getItem(tokenKey);
+            xhr.setRequestHeader("Authorization", "Bearer " + token);
+        },
+        success: function(data) {
+            //debugger;
+
+            if (data == "User") {
+                alert("Вcе норм вы авторизованы");
+                getRSS();
+
+            }
+
+            if (data == "Admin") {
+                alert("Вcе норм вы авторизованы");
+                getRSS();
+
+            }
+        },
+        error: function(data) {
+            //debugger;
+
+            var event = JSON.parse(data.responseText);
+            if (data.responseJSON == "noauth") {
+                alert("Вы должны авторизоваться");
+                document.location.href = "index.html";
+            } else {
+                alert("Ошибка" + data.responseText);
+            }
+        }
+    });
+
+
+
+    function WriteResponse(feeds) {
+        var strResult = "<table class='simple-little-table' cellspacing='0'><tr><th>Подписка</th><th>ID</th><th>Имя</th><th>Сылка</th><th>Заголовок</th><th>Описание</th></tr>";
+        $.each(feeds, function(index, feed) {
+            strResult += "<tr class='fieldID' id='ID:" + feed.Id + "'><td><a class='subID' id='subID" + feed.Id + "'>Подписаться</a></td><td>" + feed.Id + "</td><td> " + feed.Name + "</td><td>" +
+                feed.Link + "</td><td>" + feed.Title + "</td><td>" + feed.Description +
+                "</td></tr>";
+        });
+        strResult += "</table>";
+        $("#tableBlock").html(strResult);
+        $("#tableBlockH").show();
+        getSub();
+
+    }
+
+    function getSub() {
+        $.ajax({
+            type: 'GET',
+            url: window.host + 'api/sign/',
+            dataType: 'json',
+            beforeSend: function(xhr) {
+                debugger;
+                var token = sessionStorage.getItem(tokenKey);
+                xhr.setRequestHeader("Authorization", "Bearer " + token);
+            },
+            success: function(subs) {
+                debugger;
+                //вывод подписок
+                $.each(subs, function(index, sub) {
+                    //alert("#subID"+sub.IdRSS);
+                    debugger;
+                    $("#subID" + sub.IdRSS).text("Вы Подписаны(Отписаться)");
+                });
+            },
+            error: function(data) {
+                debugger;
+
+
+                if (data.statusText == "Unauthorized") {
+                    alert("Вы должны авторизоваться");
+                    document.location.href = "index.html";
+                } else {
+                    alert("Ошибка" + data.responseText);
+                }
+            }
+        });
+    }
+
+
+
+    //функция получающая список лент
+    function getRSS() {
+        $.ajax({
+            type: 'GET',
+            url: window.host + 'api/rss/',
+            dataType: 'json',
+            beforeSend: function(xhr) {
+                //debugger;
+                var token = sessionStorage.getItem(tokenKey);
+                xhr.setRequestHeader("Authorization", "Bearer " + token);
+            },
+            success: function(data) {
+                //debugger;
+
+                WriteResponse(data);
+            },
+            error: function(data) {
+                //debugger;
+
+
+                if (data.statusText == "Unauthorized") {
+                    alert("Вы должны авторизоваться как ");
+                    document.location.href = "index.html";
+                } else {
+                    alert("Ошибка" + data.responseText);
+                }
+            }
+        });
+    }
+
+    $(document).on("click", ".subID", function() {
+
+
+        debugger;
+        // получаем значения для добавляемой подписки
+        var feed = {
+
+            IdRSS: $(this).attr('id').substring(5)
+        };
+
+        $.ajax({
+            url: window.host + 'api/sign/',
+            type: 'POST',
+            data: JSON.stringify(feed),
+            contentType: "application/json;charset=utf-8",
+            beforeSend: function(xhr) {
+                debugger;
+
+                var token = sessionStorage.getItem(tokenKey);
+                xhr.setRequestHeader("Authorization", "Bearer " + token);
+            },
+            success: function(data) {
+                alert(data);
+                debugger;
+                getRSS();
+            },
+            error: function(data) {
+                debugger;
+
+
+                if (data.statusText == "Unauthorized") {
+                    alert("Вы должны авторизоваться как АДМИН");
+                    document.location.href = "index.html";
+                } else {
+                    alert("Ошибка" + data.responseText);
+                }
+            }
+        });
+
+
+    });
+
+    //обработчик подтягивающий конкретную новость
+    $(document).on("click", ".fieldID", function() {
+        //debugger;
+        window.Id = $(this).attr('id').split(':')[1];
+        $.ajax({
+            type: 'GET',
+            url: window.host + 'api/item/' + window.Id,
+            dataType: 'json',
+            beforeSend: function(xhr) {
+                //debugger;
+
+                var token = sessionStorage.getItem(tokenKey);
+                xhr.setRequestHeader("Authorization", "Bearer " + token);
+            },
+            success: function(feeds) {
+                //debugger;
+
+
+                var strResult = "<table class='simple-little-table' cellspacing='0'><tr><th>Сылка</th><th>Заголовок</th><th>Описание</th></tr>";
+                $.each(feeds, function(index, feed) {
+                    strResult += "<tr><td><a href='" + feed.Link + "'>" +
+                        "Перейти" + "</a></td><td>" + feed.Title + "</td><td>" + feed.Description +
+                        "</td></tr>";
+                });
+                strResult += "</table>";
+                $("#tableBlockDop").html(strResult);
+                $("#tableBlockDopH").show();
+            },
+            error: function(data) {
+                //debugger;
+
+
+                if (data.statusText == "Unauthorized") {
+                    alert("Вы должны авторизоваться");
+                    document.location.href = "index.html";
+                } else {
+                    alert("Ошибка" + data.responseText);
+                }
+            }
+        });
+    });
+});
+    </script>
+</body>
+
+</html>

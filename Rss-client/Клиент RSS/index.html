@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8" />
+    <title>RSS-Reader</title>
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/host.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>RSS-Reader</h1>
+
+        </header>
+        <section>
+            <div id="container_demo">
+                <a class="hiddenanchor" id="toregister"></a>
+                <a class="hiddenanchor" id="tologin"></a>
+                <div id="wrapper">
+                    <div id="login" class="animate form">
+                        <form action="mysuperscript.php" autocomplete="on">
+                            <h1>Вход</h1>
+                            <p>
+                                <label for="username" class="uname" data-icon="u"> Ваш e-mail или логин</label>
+                                <input id="emailLogin" value="zfged@yandex.ua" name="username" required="required" type="text" placeholder="sitehere или sitehere.ru@my.com" />
+                            </p>
+                            <p>
+                                <label for="password" class="youpasswd" data-icon="p"> Ваш пароль </label>
+                                <input id="passwordLogin" value="K80962251806k`" name="password" required="required" type="password" placeholder="например 123456" />
+                            </p>
+
+
+                            <p id="submitLogin" value="Войти">Войти</p>
+                            <div id="webapiMenu" hidden>
+                                <a href="item.html">
+                                    <p id="submitLogin" value="Войти">Перейти в клиенкое меню</p>
+                                </a>
+                                <a href="admin.html">
+                                    <p id="submitLogin" value="Войти">Перейти в админку</p>
+                                </a>
+                            </div>
+
+                            <p class="change_link">
+                                Не зарегистрированы еще ?
+                                <a href="#toregister" class="to_register">Присоединяйтесь</a>
+                            </p>
+                        </form>
+                    </div>
+
+                    <div id="register" class="animate form">
+                        <form action="mysuperscript.php" autocomplete="on">
+                            <h1> Регистрация </h1>
+                            <p>
+                                <label for="username" class="uname" data-icon="u"> Ваш e-mail</label>
+                                <input id="email" name="username" required="required" value="zfged@yandex.ua" type="text" placeholder="sitehere или sitehere.ru@my.com" />
+                            </p>
+                            <p>
+                                <label for="name" class="uname" data-icon="u"> Ваше Имя</label>
+                                <input id="name" name="name" required="required" type="text" value="Дима" placeholder="sitehere или sitehere.ru@my.com" />
+                            </p>
+
+                            <p>
+                                <label for="password" class="youpasswd" data-icon="p"> Ваш пароль </label>
+                                <input id="password" name="password" required="required" type="password" value="K80962251806k`" placeholder="например 123456" />
+                            </p>
+                            <p>
+                                <label for="con_password" class="youpasswd" data-icon="p"> Повторить пароль </label>
+                                <input id="confirmpassword" name="con_password" required="required" type="password" value="K80962251806k`" placeholder="например 123456" />
+                            </p>
+
+                            <p class="login button">
+                                <button id="submitreg" value="Зарегистрироваться"> Зарегистрироваться </button>
+                            </p>
+                            <p class="change_link">
+                                Уже зарегистрированы ?
+                                <a href="#tologin" class="to_register"> Войдите на сайт </a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script type="text/javascript">
+$(document).ready(function() {
+
+    window.tokenKey = "tokenInfo";
+    $.ajax({
+        type: 'GET',
+        url: window.host + 'api/authorize/',
+        dataType: 'json',
+        beforeSend: function(xhr) {
+            debugger;
+            var token = sessionStorage.getItem(tokenKey);
+            xhr.setRequestHeader("Authorization", "Bearer " + token);
+        },
+        success: function(data) {
+            debugger;
+
+            if (data == "User") {
+                $("#webapiMenu").show();
+
+            }
+
+            if (data == "Admin") {
+                $("#webapiMenu").show();
+
+            }
+        }
+
+    });
+});
+
+//функция для регистрации пользователя
+$(function() {
+    $('#submitreg').click(function(e) {
+        e.preventDefault();
+        var data = {
+            Email: $('#email').val(),
+            Password: $('#password').val(),
+            ConfirmPassword: $('#confirmpassword').val(),
+            FirstName: $('#name').val(),
+            LastName: $('#lastname').val(),
+            Age: $('#age').val(),
+            Group: $('#group').val(),
+        };
+        debugger;
+        $.ajax({
+
+            type: 'POST',
+            url: window.host + 'api/Account/Register',
+            contentType: 'application/json; charset=utf-8',
+            data: JSON.stringify(data)
+        }).success(function(data) {
+            alert("Регистрация пройдена");
+        }).error(function(data) {
+            debugger;
+            alert("В процесе регистрации возникла ошибка" + data.responseText);
+        });
+    });
+})
+    </script>
+    <script type="text/javascript">
+//функция для авторизации пользователя
+$(function() {
+    //...........................
+
+    var tokenKey = "tokenInfo";
+    $('#submitLogin').click(function(e) {
+        e.preventDefault();
+        var loginData = {
+            grant_type: 'password',
+            username: $('#emailLogin').val(),
+            password: $('#passwordLogin').val()
+        };
+
+        $.ajax({
+            type: 'POST',
+            url: window.host + 'Token',
+            data: loginData
+        }).success(function(data) {
+            alert("авторизация пройшла успешно");
+
+            // сохраняем в хранилище sessionStorage токен доступа
+            debugger;
+            sessionStorage.setItem(tokenKey, data.access_token);
+            console.log(data.access_token);
+
+            $("#webapiMenu").show();
+
+        }).error(function(data) {
+            debugger;
+            alert('При логине возникла ошибка' + data.responseText);
+        });
+    });
+
+    $('#logOut').click(function(e) {
+        e.preventDefault();
+        sessionStorage.removeItem(tokenKey);
+    });
+})
+    </script>
+</body>
+
+</html>

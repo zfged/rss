@@ -1,0 +1,12 @@
+﻿ALTER TABLE [dbo].[UserRSS]  WITH CHECK ADD  CONSTRAINT [FK_UserRSS_AspNetUsers] FOREIGN KEY([IdUser])
+REFERENCES [dbo].[AspNetUsers] ([Id])
+GO
+
+ALTER TABLE [dbo].[UserRSS]  WITH CHECK ADD  CONSTRAINT [FK_UserRSS_AspNetUsers] FOREIGN KEY([IdRSS])
+REFERENCES [dbo].[RSSes] ([Id])
+GO
+
+ALTER TABLE [dbo].[UserRSS] CHECK CONSTRAINT [FK_UserRSS_AspNetUsers]
+GO
+
+

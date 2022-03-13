@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[UserRSSes] (
+    [Id]     INT            IDENTITY (1, 1) NOT NULL,
+    [IdUser] NVARCHAR (150) NOT NULL,
+    [IdRSS]  NVARCHAR (150) NOT NULL,
+    CONSTRAINT [PK_UserRSSes] PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+

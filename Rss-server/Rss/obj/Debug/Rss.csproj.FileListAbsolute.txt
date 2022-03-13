@@ -1,0 +1,160 @@
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\roslyn\csc.exe
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\roslyn\System.Collections.Immutable.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\roslyn\vbc.exe
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\roslyn\VBCSCompiler.exe
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\roslyn\VBCSCompiler.exe.config
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Rss.dll.config
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Rss.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Rss.pdb
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Antlr3.Runtime.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\EntityFramework.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\EntityFramework.SqlServer.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.Owin.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.Owin.Security.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.Owin.Security.Google.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.Web.Infrastructure.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Newtonsoft.Json.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Owin.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\System.Net.Http.Formatting.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\System.Web.Helpers.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\System.Web.Http.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\System.Web.Http.Owin.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\System.Web.Http.WebHost.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\System.Web.Mvc.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\System.Web.Optimization.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\System.Web.Razor.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\System.Web.WebPages.Deployment.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\System.Web.WebPages.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\System.Web.WebPages.Razor.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\WebGrease.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Newtonsoft.Json.xml
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\System.Net.Http.Formatting.xml
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\System.Web.Helpers.xml
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\System.Web.Http.xml
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\System.Web.Http.WebHost.xml
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\System.Web.Mvc.xml
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\System.Web.Optimization.xml
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\System.Web.Razor.xml
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\System.Web.WebPages.xml
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\System.Web.WebPages.Deployment.xml
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\System.Web.WebPages.Razor.xml
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Antlr3.Runtime.pdb
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\EntityFramework.xml
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\EntityFramework.SqlServer.xml
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.Owin.xml
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.Owin.Security.xml
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.Owin.Security.Google.xml
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\bin\System.Web.Http.Owin.xml
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\obj\Debug\Rss.dll
+c:\users\dima pc\documents\visual studio 2015\Projects\Rss\Rss\obj\Debug\Rss.pdb
+C:\Users\Dima PC\documents\visual studio 2015\Projects\Rss\Rss\bin\System.Web.Cors.dll
+C:\Users\Dima PC\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.Owin.Cors.dll
+C:\Users\Dima PC\documents\visual studio 2015\Projects\Rss\Rss\bin\Microsoft.Owin.Cors.xml
+C:\Users\Dima PC\documents\visual studio 2015\Projects\Rss\Rss\obj\Debug\Rss.csprojResolveAssemblyReference.cache
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\roslyn\csc.exe
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\roslyn\vbc.exe
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\roslyn\VBCSCompiler.exe
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Rss.dll.config
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Rss.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Rss.pdb
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Antlr3.Runtime.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\EntityFramework.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\EntityFramework.SqlServer.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.Owin.Cors.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.Owin.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.Owin.Security.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Newtonsoft.Json.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Owin.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\System.Net.Http.Formatting.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\System.Web.Cors.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\System.Web.Helpers.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\System.Web.Http.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\System.Web.Http.Owin.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\System.Web.Http.WebHost.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\System.Web.Mvc.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\System.Web.Optimization.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\System.Web.Razor.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\System.Web.WebPages.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\System.Web.WebPages.Razor.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\WebGrease.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.Owin.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.Owin.Cors.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Newtonsoft.Json.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\System.Net.Http.Formatting.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\System.Web.Helpers.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\System.Web.Http.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\System.Web.Http.WebHost.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\System.Web.Mvc.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\System.Web.Optimization.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\System.Web.Razor.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\System.Web.WebPages.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\System.Web.WebPages.Razor.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Antlr3.Runtime.pdb
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\EntityFramework.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\EntityFramework.SqlServer.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.Owin.Security.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\bin\System.Web.Http.Owin.xml
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\obj\Debug\Rss.csprojResolveAssemblyReference.cache
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\obj\Debug\Rss.dll
+C:\Users\Dima PC\Desktop\RSS\Rss-Сервер\Rss\obj\Debug\Rss.pdb
